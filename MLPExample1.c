@@ -42,9 +42,7 @@ int main(void) {
     double **inputDataList = getInputDataList(NUMBER_LIMIT, data);
     int *answerIndexList = getAnswerIndexList(NUMBER_LIMIT, data);
 
-    // 데이터와 정답 리스트를 훈련과 시험용으로 분배 (같은 SEED를 사용해야 입력과 정답의 인덱스가 일치함)
-    //double[][][] inputSplit = MLP.splitInputDataList(inputDataList, TRAIN_RATE, SEED, true);
-    //int[][] answerSplit = MLP.splitAnswerIndexList(answerIndexList, TRAIN_RATE, SEED, true);
+     // 데이터를 섞는 부분 생략
 
     // [0] = 훈련용, [1] = 시험용
     double **trainInputDataList = (double **) malloc(sizeof(double *) * NUMBER_LIMIT * TRAIN_RATE);
