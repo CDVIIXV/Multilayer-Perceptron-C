@@ -38,7 +38,7 @@ double ***train(MLP *mlp, int trainCount, int trainDataCount, double **trainInpu
 
 double **epoch(MLP *mlp, int dataCount, double **inputDataList, int *answerIndexList, bool isTrain);
 
-double **frontPropagation(MLP *mlp, double *inputData);
+double **forwardPropagation(MLP *mlp, double *inputData);
 
 void backPropagation(MLP *mlp, double **outputList, int answerIndex);
 
